@@ -12,7 +12,7 @@ public class TestJeu {
     // ici on test est ce qu'on a le résultat souhaité on utilisant les fichiers "cartes et déplacement"
     @Test
     void testPremierScenario() throws IOException {
-        Jeu jeu = new Jeu("src/carte.txt", "src/deplacements1.txt");
+        Jeu jeu = new Jeu("src/resources/carte.txt", "src/resources/deplacements1.txt");
 
         assertEquals(2, jeu.getPersonnage().getX());
         assertEquals(9, jeu.getPersonnage().getY());
@@ -22,7 +22,7 @@ public class TestJeu {
     // ici on test avec le deuxième fichier (la
     @Test
     void testDeuxiemeScenario() throws IOException {
-        Jeu jeu = new Jeu("src/carte.txt", "src/deplacements2.txt");
+        Jeu jeu = new Jeu("src/resources/carte.txt", "src/resources/deplacements2.txt");
         assertEquals(9, jeu.getPersonnage().getX());
         assertEquals(1, jeu.getPersonnage().getY());
     }
